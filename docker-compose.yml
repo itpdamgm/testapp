@@ -5,6 +5,9 @@ services:
     image: sppd
     container_name: sppd-app
     restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
 
   nginx:
     image: nginx:alpine
