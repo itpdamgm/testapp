@@ -1,0 +1,58 @@
+/* Styles go here */
+
+.page-header, .page-header-space {
+    height: 100px;
+}
+
+.page-footer, .page-footer-space {
+    height: 250px;
+    margin: 0;
+
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.page {
+    page-break-after: always !important;
+
+}
+
+.page-row {
+    page-break-inside: avoid !important;
+}
+@page {
+    margin: 5mm;
+    size: legal;
+}
+
+@media print {
+    thead {display: table-header-group;}
+    tfoot {display: table-footer-group; height: 300px;}
+
+    .page-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 13px;
+        width: 210mm;
+        height: 297mm;
+    }
+    .table-bordered th, .table-bordered td {
+        border:1px solid #000 !important;
+    }
+
+}
