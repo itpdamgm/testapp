@@ -13,5 +13,5 @@ services:
     ports:
       - 8001:80
     volumes:
-      - ./:/var/www
+      - ./:/var/www/html
       - ./Apps/nginx:/etc/nginx/conf.d/

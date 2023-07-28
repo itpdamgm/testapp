@@ -17,5 +17,5 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 
 # Set working directory
-WORKDIR /var/www
-ADD . /var/www
+WORKDIR /var/www/html
+ADD . /var/www/html
